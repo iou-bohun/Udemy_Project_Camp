@@ -64,5 +64,42 @@ LoadScene의 인자값으로 씬의 이름을 직접 적어주어도 동일한 �
 
 <img width="300" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/0157288b-e688-43bf-ba4e-dbe1980f2ec5">
 
+### 장애물 재 소환
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Spawner : MonoBehaviour
+{
+    public GameObject wallPrefab;
+    public float spawntime = 1.5f;
+    float term;
+    public float range = 3;
+
+    private void Start()
+    {
+        term = spawntime;
+    }
+    private void Update()
+    {
+        term += Time.deltaTime;
+        if(term> spawntime)
+        {
+            Vector3 pos = transform.position;
+            pos.y += Random.Range(-range, range);
+            Instantiate(wallPrefab , pos, transform.rotation);
+            term -=spawntime;
+        }
+    }
+}
+```
+장애물 소환은 Spawner 오브젝트를 새로 생성해 스크립트를 추가해준다.
+![image](https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/a896d87f-26b0-43ca-b745-dba61afd2d56)
+Instantiate함수를 이용해 오브젝트를 새로 생성해준다. 
+Instantiate(프리펩,vector3,rotation)의 값을 인자로 같는다. 
+
+
+
 본 후기는 유데미-스나이퍼팩토리 10주 완성 프로젝트캠프 학습 일지 후기로 작성 되었습니다.
 #프로젝트캠프 #프로젝트캠프후기 #유데미 #udemy #스나이퍼팩토리 #웅진씽크빅 #인사이드아웃 #IT개발캠프 #개발자부트캠프 #unity #유니티 #게임개발 #메타버스 
