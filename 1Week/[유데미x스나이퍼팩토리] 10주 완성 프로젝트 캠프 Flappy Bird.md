@@ -54,6 +54,10 @@ OnCollisionEnter(Collision collision)함수를 이용해 충돌을 감지한다.
 ### Scene Laod  
 플레이어가 wall물체와 충돌할 경우 LoadScene을 호출해 씬을 재시작한다. 
 SceneManager.GetActiveSvene().naem 을 이용해 현제 액티브된 씬의 이름을 가져온다. 
+```c#
+SceneManager.LoadScene("Game");
+```
+LoadScene의 인자값으로 씬의 이름을 직접 적어주어도 동일한 기능을 수행한다. 
 
 ### prefabs
 생성된 오브젝트의 특성들과 성질을 기억하는 재사용이 가능한 오브젝트  
