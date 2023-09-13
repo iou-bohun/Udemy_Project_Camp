@@ -5,7 +5,7 @@
 
 
 #### prefabs
-생성된 오브젝트의 특성들과 성질을 기억하는 재사용이 가능한 오브젝트
+생성된 오브젝트의 특성들과 성질을 기억하는 재사용이 가능한 오브젝트  
 
 <img width="88" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/0157288b-e688-43bf-ba4e-dbe1980f2ec5">
 
