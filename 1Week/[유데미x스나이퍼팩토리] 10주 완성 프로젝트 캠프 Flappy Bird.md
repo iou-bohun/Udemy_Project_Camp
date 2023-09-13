@@ -46,7 +46,7 @@ Jump 키워드의 경우
   
 
 Project Settings > input Manager > Jump 부분에 이미 정해져 있다. 
-Positive Button 의 값이 'space'로 이미 정해진것을 확인 할 수 있다. 
+  Positive Button 의 값이 'space'로 이미 정해진것을 확인 할 수 있다. 
 
 ### prefabs
 생성된 오브젝트의 특성들과 성질을 기억하는 재사용이 가능한 오브젝트  
