@@ -4,40 +4,28 @@
 출처 - https://www.forbes.com/sites/anthonykosner/2014/02/03/flappy-bird-and-the-power-of-simplicity-scaled/?sh=747c380f7339
 
 #### player 스크립트
+'''public float jumpPower;
+public float speed;
+public int hp;
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class Player : MonoBehaviour
+private void Start()
 {
-    Rigidbody rigid;
-
-    public float jumpPower;
-    public float speed;
-    public int hp;
-
-    private void Start()
+    rigid = GetComponent<Rigidbody>();  
+}
+private void Update()
+{
+    if (Input.GetButtonDown("Jump"))
     {
-        rigid = GetComponent<Rigidbody>();  
-    }
-    private void Update()
-    {
-        if (Input.GetButtonDown("Jump"))
-        {
-            rigid.velocity = new Vector3(0, jumpPower, 0);
-        }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Wall")
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        rigid.velocity = new Vector3(0, jumpPower, 0);
     }
 }
-
+private void OnCollisionEnter(Collision collision)
+{
+    if (collision.gameObject.tag == "Wall")
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+}'''
 
 #### prefabs
 생성된 오브젝트의 특성들과 성질을 기억하는 재사용이 가능한 오브젝트  
