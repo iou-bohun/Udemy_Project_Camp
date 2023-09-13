@@ -141,6 +141,11 @@ public void addSocre(int s)
 ```
 플레이어의 y 값이 -2이하가 된 경우 점프 파워를 변경해준다. 
 
+##  Try3
+```c#
+transform.Translate(Vector3.right * speed * Time.deltaTime);
+```
+플레이어가 앞으로 조금씩 이동하도록 변경해보았다.
 
 <br/><br/><br/>
 본 후기는 유데미-스나이퍼팩토리 10주 완성 프로젝트캠프 학습 일지 후기로 작성 되었습니다.
