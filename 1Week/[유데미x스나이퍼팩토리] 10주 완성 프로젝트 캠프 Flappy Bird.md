@@ -4,7 +4,8 @@
 출처 - https://www.forbes.com/sites/anthonykosner/2014/02/03/flappy-bird-and-the-power-of-simplicity-scaled/?sh=747c380f7339
 
 #### player 스크립트
-'''public float jumpPower;
+'''
+public float jumpPower;
 public float speed;
 public int hp;
 
@@ -25,7 +26,8 @@ private void OnCollisionEnter(Collision collision)
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-}'''
+}
+'''
 
 #### prefabs
 생성된 오브젝트의 특성들과 성질을 기억하는 재사용이 가능한 오브젝트  
