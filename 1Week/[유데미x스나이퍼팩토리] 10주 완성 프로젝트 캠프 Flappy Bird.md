@@ -5,7 +5,7 @@
 
 #### player 스크립트
 
-'''c#
+```c#
 public float jumpPower;
 public float speed;
 public int hp;
@@ -28,7 +28,7 @@ private void OnCollisionEnter(Collision collision)
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
-'''
+```
 
 #### prefabs
 생성된 오브젝트의 특성들과 성질을 기억하는 재사용이 가능한 오브젝트  
