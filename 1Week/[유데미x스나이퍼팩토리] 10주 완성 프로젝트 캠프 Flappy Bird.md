@@ -160,8 +160,11 @@ public GameObject[] wallPrefab;
 Instantiate(wallPrefab[randomRange],transform.position,transform.rotation);
 ```
 <img width="350" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/6f47f4ba-2bd0-42bc-b091-c66a25ca2257">
+<img width="81" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/b6d04b89-9dc9-4e39-b5bc-5c52e865814a">
+
 
 여러 형태의 장애물 생성
+
 
 
 <br/><br/><br/>
