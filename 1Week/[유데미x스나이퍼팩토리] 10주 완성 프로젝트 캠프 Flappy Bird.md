@@ -52,7 +52,7 @@ OnCollisionEnter(Collision collision)함수를 이용해 충돌을 감지한다.
 위의 경우 tag를 이용해 tag가 Wall인 물체와의 충돌만을 감지하게 하였다. 
 
 ### Scene Laod  
-플레이어가 wall물체와 충돌할 경우 LadoScene을 호출해 씬을 재시작한다. 
+플레이어가 wall물체와 충돌할 경우 LoadScene을 호출해 씬을 재시작한다. 
 SceneManager.GetActiveSvene().naem 을 이용해 현제 액티브된 씬의 이름을 가져온다. 
 
 ### prefabs
