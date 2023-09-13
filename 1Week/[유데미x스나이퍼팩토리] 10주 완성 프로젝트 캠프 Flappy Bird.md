@@ -65,6 +65,10 @@ LoadScene의 인자값으로 씬의 이름을 직접 적어주어도 동일한 �
 <img width="300" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/0157288b-e688-43bf-ba4e-dbe1980f2ec5">
 
 ### 장애물 재 소환
+
+장애물 소환은 Spawner 오브젝트를 새로 생성해 스크립트를 추가해준다.
+![image](https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/a896d87f-26b0-43ca-b745-dba61afd2d56)
+
 ```c#
 using System.Collections;
 using System.Collections.Generic;
@@ -94,8 +98,6 @@ public class Spawner : MonoBehaviour
     }
 }
 ```
-장애물 소환은 Spawner 오브젝트를 새로 생성해 스크립트를 추가해준다.
-![image](https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/a896d87f-26b0-43ca-b745-dba61afd2d56)
 Instantiate함수를 이용해 오브젝트를 새로 생성해준다. 
 Instantiate(프리펩,vector3,rotation)의 값을 인자로 같는다. 
 
