@@ -41,13 +41,18 @@ public class Player : MonoBehaviour
 
 GetButtonDown("Jump") 함수를 이용해 키 입력을받는다. 
 Jump 키워드의 경우   
-
 <img width="450" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/c9f14f0a-7f7e-41d1-8e7f-52694d61ec3c">
-  
-
 Project Settings > input Manager > Jump 부분에 이미 정해져 있다.
-
 Positive Button 의 값이 'space'로 이미 정해진것을 확인 할 수 있다. 
+
+###물체 충돌
+OnCollisionEnter(Collision collision)함수를 이용해 충돌을 감지한다. 
+이 함수는 스크립트가 부착된 오브젝트와 이 외의 오브젝트와의 충돌을 감지하는데 사용된다. 
+위의 경우 tag를 이용해 tag가 Wall인 물체와의 충돌만을 감지하게 하였다. 
+
+###Scene Laod
+플레이어가 wall물체와 충돌할 경우 LadoScene을 호출해 씬을 재시작한다. 
+SceneManager.GetActiveSvene().naem 을 이용해 현제 액티브된 씬의 이름을 가져온다. 
 
 ### prefabs
 생성된 오브젝트의 특성들과 성질을 기억하는 재사용이 가능한 오브젝트  
