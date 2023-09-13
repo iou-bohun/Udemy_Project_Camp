@@ -3,7 +3,7 @@
 
 출처 - https://www.forbes.com/sites/anthonykosner/2014/02/03/flappy-bird-and-the-power-of-simplicity-scaled/?sh=747c380f7339
 
-#### player 스크립트
+### player 스크립트
 ```c#
 using System.Collections;
 using System.Collections.Generic;
@@ -48,7 +48,7 @@ Jump 키워드의 경우
 Project Settings > input Manager > Jump 부분에 이미 정해져 있다. 
 Positive Button 의 값이 'space'로 이미 정해진것을 확인 할 수 있다. 
 
-#### prefabs
+### prefabs
 생성된 오브젝트의 특성들과 성질을 기억하는 재사용이 가능한 오브젝트  
 
 <img width="300" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/0157288b-e688-43bf-ba4e-dbe1980f2ec5">
