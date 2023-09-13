@@ -152,6 +152,17 @@ transform.Translate(Vector3.right * speed * Time.deltaTime);
 transform.localScale += Vector3.up*Time.deltaTime*0.1f;
 ```
 플레이어의 x축 크기가 점점 증가하게 하였다. 
+## Try5
+```c#
+public GameObject[] wallPrefab;
+```
+```c#
+Instantiate(wallPrefab[randomRange],transform.position,transform.rotation);
+```
+<img width="136" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/6f47f4ba-2bd0-42bc-b091-c66a25ca2257">
+
+여러 형태의 장애물 생성
+
 
 <br/><br/><br/>
 본 후기는 유데미-스나이퍼팩토리 10주 완성 프로젝트캠프 학습 일지 후기로 작성 되었습니다.
