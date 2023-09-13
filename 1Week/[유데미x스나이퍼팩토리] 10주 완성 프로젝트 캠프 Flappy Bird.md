@@ -159,7 +159,7 @@ public GameObject[] wallPrefab;
 ```c#
 Instantiate(wallPrefab[randomRange],transform.position,transform.rotation);
 ```
-<img width="136" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/6f47f4ba-2bd0-42bc-b091-c66a25ca2257">
+<img width="350" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/6f47f4ba-2bd0-42bc-b091-c66a25ca2257">
 
 여러 형태의 장애물 생성
 
