@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
 GetButtonDown("Jump") 함수를 이용해 키 입력을받는다. 
 Jump 키워드의 경우   
 <img width="450" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/c9f14f0a-7f7e-41d1-8e7f-52694d61ec3c">
+
 Project Settings > input Manager > Jump 부분에 이미 정해져 있다.
 Positive Button 의 값이 'space'로 이미 정해진것을 확인 할 수 있다. 
 
