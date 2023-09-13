@@ -4,28 +4,37 @@
 출처 - https://www.forbes.com/sites/anthonykosner/2014/02/03/flappy-bird-and-the-power-of-simplicity-scaled/?sh=747c380f7339
 
 #### player 스크립트
-
 ```c#
-public float jumpPower;
-public float speed;
-public int hp;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
-private void Start()
+public class Player : MonoBehaviour
 {
-    rigid = GetComponent<Rigidbody>();  
-}
-private void Update()
-{
-    if (Input.GetButtonDown("Jump"))
+    Rigidbody rigid;
+
+    public float jumpPower;
+    public float speed;
+    public int hp;
+
+    private void Start()
     {
-        rigid.velocity = new Vector3(0, jumpPower, 0);
+        rigid = GetComponent<Rigidbody>();  
     }
-}
-private void OnCollisionEnter(Collision collision)
-{
-    if (collision.gameObject.tag == "Wall")
+    private void Update()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (Input.GetButtonDown("Jump"))
+        {
+            rigid.velocity = new Vector3(0, jumpPower, 0); // 플레이어의 점프 
+        }
+    }
+    private void OnCollisionEnter(Collision collision) // 충돌 감지
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }
 ```
