@@ -40,18 +40,6 @@
              Input.GetAxis("Mouse Y") / 10, 0);
      }
    }```
- 
-
-- 이슈
-
-  마우스 줌 인의 경우 플레이어에 일정 이상으로 가까워질 경우 상하좌우가 반젼되는 경우가 생겼다.
-  그 문제를 해결하기 위해 줌인 아웃의 최대 최소값을 정해주었다.
-  ```c#
-  if (Camera.main.fieldOfView < 10)
-             Camera.main.fieldOfView = 10;
-         else if(Camera.main.fieldOfView>100)
-             Camera.main.fieldOfView = 100;
-  ```
 
    
 #### 카메라_회전
@@ -76,6 +64,19 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
              Camera.main.fieldOfView = 100;  
      }
 ```
+
+- 이슈
+
+  마우스 줌 인의 경우 플레이어에 일정 이상으로 가까워질 경우 상하좌우가 반젼되는 경우가 생겼다.
+  그 문제를 해결하기 위해 줌인 아웃의 최대 최소값을 정해주었다.
+  
+  ```c#
+  if (Camera.main.fieldOfView < 10)
+             Camera.main.fieldOfView = 10;
+         else if(Camera.main.fieldOfView>100)
+             Camera.main.fieldOfView = 100;
+  ```
+  
 #### 카메라_초기화
 ```c#
 
@@ -88,5 +89,13 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
 ```
 
 #### 특정_조건에서의_음성_출력
+- AudioSource, AudioClip
+  AudioSouce는 씬에서 오디오 클립을 재생하는데 사용된다.
+  AudioClip은 재생될 사운드 클립에 대한 레퍼런스다.
+
+  <img width="270" alt="image" src="https://github.com/iou-bohun/group6-Linear-Regression-Calculator/assets/56661597/c7086b03-e866-4c19-a871-66ce2244f15e">
+  인스펙터 창에서의 AudioSouce와 AudioClip.
+- 사용 함수
+  PlayOnShot(AudioClip)
 #### RayCast를_이용한_터치
 #### 묵찌빠_게임
