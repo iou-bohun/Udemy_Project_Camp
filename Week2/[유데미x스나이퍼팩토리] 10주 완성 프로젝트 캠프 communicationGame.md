@@ -60,8 +60,8 @@
          parent.transform.rotation = defRotation;
          Camera.main.fieldOfView = defZoom;
      }
-   }
- ```
+   }```
+ 
 
 - 이슈
 
