@@ -95,8 +95,9 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
 
 ### 특정_조건에서의_음성_출력
 - AudioSource, AudioClip
-  AudioSouce는 씬에서 오디오 클립을 재생하는데 사용된다.
-  AudioClip은 재생될 사운드 클립에 대한 레퍼런스다.
+  
+  _AudioSouce_ 는 씬에서 오디오 클립을 재생하는데 사용된다.
+  _AudioClip_ 은 재생될 사운드 클립에 대한 레퍼런스다.
 
   <img width="270" alt="image" src="https://github.com/iou-bohun/group6-Linear-Regression-Calculator/assets/56661597/c7086b03-e866-4c19-a871-66ce2244f15e">
   인스펙터 창에서의 AudioSouce와 AudioClip.
