@@ -21,7 +21,7 @@
    1. [묵찌빠_게임](#묵찌빠_게임)
 -------------
 ## 구현 과정
-#### 카메라_이동 
+### 카메라_이동 
 - 사용 함수
    GetMouseButton(n) // 마우스 입력처리
    
@@ -41,7 +41,7 @@
    }```
 
    
-#### - 카메라_회전
+### 카메라_회전
 ```c#
  if (Input.GetMouseButton(1)) 
      {
@@ -55,7 +55,7 @@
 
 <img width="75" alt="image" src="https://github.com/iou-bohun/group6-Linear-Regression-Calculator/assets/56661597/f6ca4f95-6698-4c6b-b536-dd198468b9e0">
 
-#### 카메라_줌
+### 카메라_줌
 ```C#
 if (Input.GetAxis("Mouse ScrollWheel") != 0)
      {
@@ -80,7 +80,7 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
              Camera.main.fieldOfView = 100;
   ```
   
-#### 카메라_초기화
+### 카메라_초기화
 ```c#
 
      if (Input.GetMouseButton(2))
@@ -92,7 +92,7 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
 ```
 -----------
 
-#### 특정_조건에서의_음성_출력
+### 특정_조건에서의_음성_출력
 - AudioSource, AudioClip
   AudioSouce는 씬에서 오디오 클립을 재생하는데 사용된다.
   AudioClip은 재생될 사운드 클립에 대한 레퍼런스다.
@@ -104,7 +104,7 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
   
 ---------------
 
-#### RayCast를_이용한_터치
+### RayCast를_이용한_터치
 - 사용 함수
   Physics.RayCast(Ray,RayCastHit/레이가 반환하는 오브젝트/, 최대거리)
   ```c#
@@ -124,7 +124,7 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
 
 ---------------
   
-#### 묵찌빠_게임
+### 묵찌빠_게임
 ```c#
 tableResult[GOO, GOO] = DRAW;
 tableResult[GOO, CHOKI] = WIN;
