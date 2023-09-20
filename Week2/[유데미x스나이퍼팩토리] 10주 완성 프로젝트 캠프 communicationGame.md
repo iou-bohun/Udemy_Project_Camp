@@ -173,3 +173,5 @@ flagResult = tableResult[unityHand, myHand];
 ```
 유니티짱과 내 선택에 해당한는 결과 태이블 값을 flagResult에 할당해 묵찌빠 게임을 구현하였다. 
 
+![미연시_가위바위보](https://github.com/iou-bohun/group6-Linear-Regression-Calculator/assets/56661597/dd001754-44a4-4174-9202-29f21d57a777)
+
