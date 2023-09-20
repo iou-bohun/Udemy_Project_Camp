@@ -102,6 +102,13 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
   인스펙터 창에서의 AudioSouce와 AudioClip.
 - 사용 함수
   ```PlayOnShot(AudioClip)```
+  ```c#
+  public AudioClip voiceBirthday;
+  
+  univoice = GetComponent<AudioSource>();
+  univoice.PlayOneShot(voiceBirthday);
+```
+
   
 ---------------
 
