@@ -8,6 +8,8 @@
   1. [카메라_이동](#카메라_이동)
   2. [카메라 회전](#카메라_회전)
   3. [카메라 줌](#카메라_줌)
+  4. [카메라_초기화](#카메라_초기화)
+    
 
 * 소리 출력
   1. [특정 조건에서의 음성 출력](#특정_조건에서의_음성_출력)
@@ -31,34 +33,11 @@
 
 - 구현 코드
   ``` c#
-   void CameraMove()
-   {
      if (Input.GetMouseButton(0)) 
      {
          transform.Translate(
              Input.GetAxis("Mouse X") / 10,
              Input.GetAxis("Mouse Y") / 10, 0);
-     }
-     if (Input.GetMouseButton(1)) 
-     {
-         parent.transform.Rotate(
-              -Input.GetAxis("Mouse Y") * 7,
-              Input.GetAxis("Mouse X") * 7, 0);
-     }
-     if (Input.GetAxis("Mouse ScrollWheel") != 0)
-     {
-         Camera.main.fieldOfView += -(20 * Input.GetAxis("Mouse ScrollWheel"));
-
-         if (Camera.main.fieldOfView < 10)
-             Camera.main.fieldOfView = 10;
-         else if(Camera.main.fieldOfView>100)
-             Camera.main.fieldOfView = 100;  
-     }
-     if (Input.GetMouseButton(2))
-     {
-         transform.position = defPosition;
-         parent.transform.rotation = defRotation;
-         Camera.main.fieldOfView = defZoom;
      }
    }```
  
@@ -76,7 +55,38 @@
 
    
 #### 카메라_회전
+```c#
+ if (Input.GetMouseButton(1)) 
+     {
+         parent.transform.Rotate(
+              -Input.GetAxis("Mouse Y") * 7,
+              Input.GetAxis("Mouse X") * 7, 0);
+     }
+```
+
 #### 카메라_줌
+```C#
+if (Input.GetAxis("Mouse ScrollWheel") != 0)
+     {
+         Camera.main.fieldOfView += -(20 * Input.GetAxis("Mouse ScrollWheel"));
+
+         if (Camera.main.fieldOfView < 10)
+             Camera.main.fieldOfView = 10;
+         else if(Camera.main.fieldOfView>100)
+             Camera.main.fieldOfView = 100;  
+     }
+```
+#### 카메라_초기화
+```c#
+
+     if (Input.GetMouseButton(2))
+     {
+         transform.position = defPosition;
+         parent.transform.rotation = defRotation;
+         Camera.main.fieldOfView = defZoom;
+     }
+```
+
 #### 특정_조건에서의_음성_출력
 #### RayCast를_이용한_터치
 #### 묵찌빠_게임
