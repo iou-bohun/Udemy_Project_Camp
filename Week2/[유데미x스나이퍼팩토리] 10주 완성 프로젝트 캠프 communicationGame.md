@@ -23,7 +23,7 @@
 ## 구현 과정
 ### 카메라_이동 
 - 사용 함수
-- ```
+  ```
    _GetMouseButton(n)_ // 마우스 입력처리
   ```
    
@@ -102,13 +102,16 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
   <img width="270" alt="image" src="https://github.com/iou-bohun/group6-Linear-Regression-Calculator/assets/56661597/c7086b03-e866-4c19-a871-66ce2244f15e">
   인스펙터 창에서의 AudioSouce와 AudioClip.
 - 사용 함수
-  _PlayOnShot(AudioClip)_
+  ```
+  PlayOnShot(AudioClip)
+  ```
   
 ---------------
 
 ### RayCast를_이용한_터치
 - 사용 함수
-  _Physics.RayCast(Ray,RayCastHit/레이가 반환하는 오브젝트/, 최대거리)_
+  ```Physics.RayCast(Ray,RayCastHit/레이가 반환하는 오브젝트/, 최대거리)```
+  
   ```c#
    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
    RaycastHit hit;
