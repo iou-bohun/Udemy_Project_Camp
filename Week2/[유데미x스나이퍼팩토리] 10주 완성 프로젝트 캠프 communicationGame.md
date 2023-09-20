@@ -31,7 +31,6 @@
    
    n 2인경우 = 마우스 휠 클릭
 
-- 구현 코드
   ``` c#
      if (Input.GetMouseButton(0)) 
      {
@@ -51,6 +50,10 @@
               Input.GetAxis("Mouse X") * 7, 0);
      }
 ```
+
+회전의 경우 회전의 기준점을 parent오브젝트로 해주어 자연스러운 회전을 구현하였다. 
+
+<img width="75" alt="image" src="https://github.com/iou-bohun/group6-Linear-Regression-Calculator/assets/56661597/f6ca4f95-6698-4c6b-b536-dd198468b9e0">
 
 #### 카메라_줌
 ```C#
@@ -97,5 +100,63 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
   인스펙터 창에서의 AudioSouce와 AudioClip.
 - 사용 함수
   PlayOnShot(AudioClip)
+  
 #### RayCast를_이용한_터치
+- 사용 함수
+  Physics.RayCast(Ray,RayCastHit/레이가 반환하는 오브젝트/, 최대거리)
+  ```c#
+   Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+   RaycastHit hit;
+  ```
+  Ray의 경우 메인 카메라에서 발사되는 Ray를 이용하였다. Camera.main.ScreenPointToRay()
+  Input.mousePosition을 통해 마우스 포지션으로 Ray를 발사하도록 하였다. 
+
+  ```c#
+   if(Physics.Raycast(ray, out hit, 100))
+   {
+     GameObject hitObj = hit.collider.gameObject;
+  ```
+  Ray가 오브젝트를 만나는 경우 out hit으로 반환하게 된다.
+  이렇게 얻은 오브제트를 이용해 제어가 가능해진다.
+  
 #### 묵찌빠_게임
+```c#
+tableResult[GOO, GOO] = DRAW;
+tableResult[GOO, CHOKI] = WIN;
+tableResult[GOO, PAR] = LOOSE;
+tableResult[CHOKI, GOO] = LOOSE;
+tableResult[CHOKI, CHOKI] = DRAW;
+tableResult[CHOKI, PAR] = WIN;
+tableResult[PAR, GOO] = WIN;
+tableResult[PAR, CHOKI] = LOOSE;
+tableResult[PAR, PAR] = DRAW;
+```
+위와 같이 가위바위보의 승무패 에 대한 2차원 테이블을 먼저 생성해준다. 
+
+```c#
+ unityHand = Random.Range(GOO, PAR + 1);
+```
+게임이 시작된 경우 유니티짱의 묵 찌 빠 를 랜덤으로 정해주고 
+```c#
+if (GUI.Button(rtBtnGoo, " 묵", guiBtnGoo))
+{
+    myHand = GOO;
+    modeJanken++;
+}
+if (GUI.Button(rtBtnChoki, " 찌", guiBtnChoki))
+{
+    myHand = CHOKI;
+    modeJanken++;
+}
+if (GUI.Button(rtBtnPar,"빠",guiBtnPar))
+{
+    myHand = PAR;
+    modeJanken++;
+}
+```
+내가 GUI조작을 통해 선택한 묵 찌 빠 를 myHand에 할당해준다. 
+```c#
+flagResult = tableResult[unityHand, myHand];
+```
+유니티짱과 내 선택에 해당한는 결과 태이블 값을 flagResult에 할당해 묵찌빠 게임을 구현하였다. 
+
