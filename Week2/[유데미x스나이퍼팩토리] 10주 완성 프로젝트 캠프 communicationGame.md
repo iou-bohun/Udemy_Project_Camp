@@ -90,6 +90,7 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
          Camera.main.fieldOfView = defZoom;
      }
 ```
+-----------
 
 #### 특정_조건에서의_음성_출력
 - AudioSource, AudioClip
@@ -101,6 +102,8 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
 - 사용 함수
   PlayOnShot(AudioClip)
   
+---------------
+
 #### RayCast를_이용한_터치
 - 사용 함수
   Physics.RayCast(Ray,RayCastHit/레이가 반환하는 오브젝트/, 최대거리)
@@ -118,6 +121,8 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
   ```
   Ray가 오브젝트를 만나는 경우 out hit으로 반환하게 된다.
   이렇게 얻은 오브제트를 이용해 제어가 가능해진다.
+
+---------------
   
 #### 묵찌빠_게임
 ```c#
