@@ -1,4 +1,7 @@
 # 유니티짱을 이용한 미연시 
+
+<img width="459" alt="스크린샷 2023-09-20 211010" src="https://github.com/iou-bohun/group6-Linear-Regression-Calculator/assets/56661597/310ac803-9ed5-44a1-a0a6-c9c6437da699">
+
 ------------
 ## 구현 내용
 * 마우스를 이용한 카메라 제어
