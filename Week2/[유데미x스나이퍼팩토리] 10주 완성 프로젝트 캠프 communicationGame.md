@@ -32,20 +32,20 @@
 - 구현 코드
   ``` c#
    void CameraMove()
- {
-     if (Input.GetMouseButton(0)) // ,, 왼쪽 드래그로 카메라 이동
+   {
+     if (Input.GetMouseButton(0)) 
      {
          transform.Translate(
              Input.GetAxis("Mouse X") / 10,
              Input.GetAxis("Mouse Y") / 10, 0);
      }
-     if (Input.GetMouseButton(1)) // ,, 오른쪽 드래그로 카메라 회전
+     if (Input.GetMouseButton(1)) 
      {
          parent.transform.Rotate(
               -Input.GetAxis("Mouse Y") * 7,
               Input.GetAxis("Mouse X") * 7, 0);
      }
-     if (Input.GetAxis("Mouse ScrollWheel") != 0)// ,, 횔로 확대 축소 
+     if (Input.GetAxis("Mouse ScrollWheel") != 0)
      {
          Camera.main.fieldOfView += -(20 * Input.GetAxis("Mouse ScrollWheel"));
 
@@ -60,7 +60,7 @@
          parent.transform.rotation = defRotation;
          Camera.main.fieldOfView = defZoom;
      }
- }
+   }
  ```
    
 #### 카메라_회전
