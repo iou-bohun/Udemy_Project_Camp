@@ -28,6 +28,40 @@
    n 1인경우 = 마우스 오른쪽 클릭
    
    n 2인경우 = 마우스 휠 클릭
+
+- 구현 코드
+  ``` c#
+   void CameraMove()
+ {
+     if (Input.GetMouseButton(0)) // ,, 왼쪽 드래그로 카메라 이동
+     {
+         transform.Translate(
+             Input.GetAxis("Mouse X") / 10,
+             Input.GetAxis("Mouse Y") / 10, 0);
+     }
+     if (Input.GetMouseButton(1)) // ,, 오른쪽 드래그로 카메라 회전
+     {
+         parent.transform.Rotate(
+              -Input.GetAxis("Mouse Y") * 7,
+              Input.GetAxis("Mouse X") * 7, 0);
+     }
+     if (Input.GetAxis("Mouse ScrollWheel") != 0)// ,, 횔로 확대 축소 
+     {
+         Camera.main.fieldOfView += -(20 * Input.GetAxis("Mouse ScrollWheel"));
+
+         if (Camera.main.fieldOfView < 10)
+             Camera.main.fieldOfView = 10;
+         else if(Camera.main.fieldOfView>100)
+             Camera.main.fieldOfView = 100;  
+     }
+     if (Input.GetMouseButton(2))
+     {
+         transform.position = defPosition;
+         parent.transform.rotation = defRotation;
+         Camera.main.fieldOfView = defZoom;
+     }
+ }
+ ```
    
 #### 카메라_회전
 #### 카메라_줌
