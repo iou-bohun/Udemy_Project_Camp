@@ -65,8 +65,14 @@
 
 - 이슈
 
-마우스 줌 인의 경우 플레이어에 일정 이상으로 가까워질 경우 상하좌우가 반젼되는 경우가 생겼다.
-그 문제를 해결하기 위해 줌인 아웃의 최대 최소값을 정해주었다. 
+  마우스 줌 인의 경우 플레이어에 일정 이상으로 가까워질 경우 상하좌우가 반젼되는 경우가 생겼다.
+  그 문제를 해결하기 위해 줌인 아웃의 최대 최소값을 정해주었다.
+  ```c#
+  if (Camera.main.fieldOfView < 10)
+             Camera.main.fieldOfView = 10;
+         else if(Camera.main.fieldOfView>100)
+             Camera.main.fieldOfView = 100;
+  ```
 
    
 #### 카메라_회전
