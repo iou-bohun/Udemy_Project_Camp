@@ -107,9 +107,7 @@ if (Input.GetAxis("Mouse ScrollWheel") != 0)
   
   univoice = GetComponent<AudioSource>();
   univoice.PlayOneShot(voiceBirthday);
-```
-
-  
+  ```
 ---------------
 
 ### RayCast를_이용한_터치
