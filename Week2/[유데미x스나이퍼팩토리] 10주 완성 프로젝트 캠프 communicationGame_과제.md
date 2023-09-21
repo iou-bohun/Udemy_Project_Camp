@@ -35,7 +35,7 @@
   
   <img width="313" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/9e7de049-2959-413d-a599-482739276b20">
 
-  이와같이 Button 오브젝트가 들어가지 않고, Button스크립트가 할단된 것이다. 
+  이와같이 Button 오브젝트가 들어가지 않고, Button스크립트가 할당된 것이다. 
   
   문제를 해결하기 위해 함께 캠프를 진행하고 있는 다른분에게 문제에 대해서 이야기 해보며 해결을 하였다. 
   
