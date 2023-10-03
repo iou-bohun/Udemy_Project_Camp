@@ -13,6 +13,7 @@
   * Structure used to get information back from a raycast.
   * rigidbody, transform, collider와 같은 정보를 활용 할 수 있게 해준다.
      ``` c#
+    RaycastHit = hit;
     if(Physics.Raycast(transform.position, transform.forward,out hit, 10 ))
     {
       Debug.Log(hit.distance);
