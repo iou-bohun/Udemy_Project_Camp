@@ -1,7 +1,8 @@
 # Ray
 * 한 지점에서 뻗어나가는 무한의 선을 의미한다.
 * 방향을 나타내는 direction과 레이가 나아가는 시작점인 origin을 변수로 가진다.
-* 생성은 다음과 같이 이루어진다. ```Ray ray = new Ray(transform.posotion, transform.forward)```
+* 생성은 다음과 같이 이루어진다.
+  ```Ray ray = new Ray(transform.posotion, transform.forward)```
 
 ## Physics.Raycast?
 * bool True if the ray intersects with a collider, Ohterwise false
