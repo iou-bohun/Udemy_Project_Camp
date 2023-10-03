@@ -7,8 +7,7 @@
   * ## RaycastHit?
   * Structure used to get information back from a raycast.
   * rigidbody, transform, collider와 같은 정보를 활용 할 수 있게 해준다.
-  * <img width="154" alt="image" src="https://github.com/iou-bohun/group6-Linear-Regression-Calculator/assets/56661597/5c419f61-dca4-430d-b19b-63447ea23d0a">
-  <img width="113" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/8658973b-9266-4667-8739-71aaf04ba52b"> 
+  * <img width="154" alt="image" src="https://github.com/iou-bohun/group6-Linear-Regression-Calculator/assets/56661597/5c419f61-dca4-430d-b19b-63447ea23d0a"><img width="113" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/8658973b-9266-4667-8739-71aaf04ba52b"> 
   이와 같이 물체간의 거리를 구할 수 있다. 
 
 
