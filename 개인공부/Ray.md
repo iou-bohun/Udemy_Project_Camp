@@ -15,4 +15,4 @@
     ```
    <img width="154" alt="image" src="https://github.com/iou-bohun/group6-Linear-Regression-Calculator/assets/56661597/5c419f61-dca4-430d-b19b-63447ea23d0a"><img width="113" alt="image" src="https://github.com/iou-bohun/Udemy_Project_Camp/assets/56661597/8658973b-9266-4667-8739-71aaf04ba52b"> 
   이와 같이 물체간의 거리를 구할 수 있다.
-   
+* 선별적으로 콜라이더를 무시하거나 충돌하기 위해 LayerMask가 활용된다. 
