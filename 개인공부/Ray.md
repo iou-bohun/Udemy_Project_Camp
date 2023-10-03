@@ -13,8 +13,5 @@
     if(Physics.Raycast(transform.position, transform.forward,out hit, 10 ))
     {
       Debug.Log(hit.distance);
-     }```
-
-
-  
-      
+     }
+    ```
