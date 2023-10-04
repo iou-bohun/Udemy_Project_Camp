@@ -7,19 +7,19 @@
   * 씬이 변경되어도 저장되는 데이터를 활용하기 위해
 ## 코드
  ``` c#
-       public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     private static GameManager Instance = null;
 
     private void Awake()
     {
-        if (Instance == null) 
+        if (Instance == null)
             Instance = this;
         else if(Instance != this)
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(gameObject); // 씬이 넘어가도 유지
+        DontDestroyOnLoad(gameObject);
     }
 
 }
