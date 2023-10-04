@@ -35,4 +35,4 @@ public class GameManager : MonoBehaviour
 
 }
 ```
-
+## 사용에제
