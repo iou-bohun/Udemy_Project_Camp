@@ -40,5 +40,20 @@ public class GameManager : MonoBehaviour
 }
 ```
 ## 사용에제
+ * 이 게임에서 GameManager 스크립트에 사용되었다.
+ * 게임 캐랙터가 사망했을 때 게임 오버를 실행하는 메소드를 구현하는데 사용(게임오버UI를 로드하는데 사용됨)
+ * ``` c#
+    private void Die() {
+     // 사망 처리
+     animator.SetTrigger("Die");
+     playerAudio.clip = deathClip;
+     playerAudio.Play();
+     playerRigidbody.velocity = Vector2.zero;
+     isDead = true;
+     GameManager.instance.OnPlayerDead();
+   }
+   ```
+   GamemaManager.Instance.OnplayerDead()와 같이 사용.
 
+   
 
